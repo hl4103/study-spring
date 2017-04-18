@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="someBean1" class="cn.com.hlql.create.contructor.SomeBean1" />
+	<bean id="someBean2" class="cn.com.hlql.create.static_factory.SomeBeanFactory" factory-method="getSomeBean2"/>
+
+	<bean id="someBean3Factory" class="cn.com.hlql.create.instance.SomeBean3Factory"/>
+	<bean id="someBean3" factory-bean="someBean3Factory" factory-method="getSomeBean3"/>
+	
+	<bean id="someBean4" class="cn.com.hlql.create.factory_bean.SomeBean4FactoryBean" />
+</beans>
