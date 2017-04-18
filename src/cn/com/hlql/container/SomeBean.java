@@ -4,5 +4,6 @@ public class SomeBean {
   
 	public SomeBean() {
 		// TODO Auto-generated constructor stub
+		System.out.println("aaa");
 	}
 }
